@@ -1,0 +1,9 @@
+<h1>Success</h1>
+@{
+    if(Context.Session.GetInt32("UUID") != null)
+    {
+<form asp-action="logout" asp-controller="Home" method="POST">
+    <button type="submit">Logout</button>
+</form>
+    }
+}
